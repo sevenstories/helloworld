@@ -1,5 +1,5 @@
 
-FROM node:latest
+FROM node:6
 LABEL Name=helloworld Version=1.0.0 
 COPY package.json /tmp/package.json
 RUN cd /tmp && npm install --production
